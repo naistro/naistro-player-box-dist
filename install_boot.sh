@@ -14,7 +14,7 @@ cat > ~/.termux/boot/start.sh <<'EOF'
 sleep 5
 
 # go to your project folder
-cd ~/naistro-player-box
+cd ~/naistro-player-box-dist
 
 # clear the screen (optional)
 clear
