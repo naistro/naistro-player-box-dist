@@ -1,0 +1,8 @@
+boto3
+botocore
+mpv
+requests
+pyyaml
+python-mpv
+websocket-client
+schedule
