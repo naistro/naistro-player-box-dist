@@ -8,10 +8,10 @@ mkdir -p ~/.termux/boot
 
 # 2) write your startup script
 cat > ~/.termux/boot/start.sh <<'EOF'
-#!/data/data/com.termux/files/usr/bin/sh
+#!/bin/bash
 
 # wait for 5 seconds for the system to settle
-sleep 5
+sleep 10
 
 # go to your project folder
 cd ~/naistro-player-box-dist
@@ -20,7 +20,7 @@ cd ~/naistro-player-box-dist
 clear
 
 # launch your zipapp
-python3 naistro-player-box.pyz
+python3 dist/naistro-player-box.pyz
 EOF
 
 # 3) make it executable
