@@ -10,17 +10,20 @@ mkdir -p ~/.termux/boot
 cat > ~/.termux/boot/start.sh <<'EOF'
 #!/bin/bash
 
-# wait for 5 seconds for the system to settle
-sleep 10
+# Give Android time to finish booting
+sleep 5
 
-# go to your project folder
-cd ~/naistro-player-box-dist
+# Keep the device awake while we start up
+termux-wake-lock
 
-# clear the screen (optional)
-clear
+# Define your workdir and command
+APP_DIR="~/naistro-player-box-dist"
+CMD="cd \"$APP_DIR\" && python3 dist/naistro-player-box.pyz"
 
-# launch your zipapp
-python3 dist/naistro-player-box.pyz
+# Launch Termux UI and tell it to run your CMD, then exit the session when done
+am start -n com.termux/com.termux.app.TermuxActivity \
+   -e com.termux.RUN_COMMAND "$CMD" \
+   --ez com.termux.RUN_COMMAND_EXIT true
 EOF
 
 # 3) make it executable
