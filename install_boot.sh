@@ -1,32 +1,22 @@
 #!/bin/bash
 
-#
-# run me once to install the Termux:Boot startup script
+# Install dependencies
+pkg update -y && pkg install -y python mpv termux-boot termux-api
 
-# 1) ensure the boot folder exists
+# Create boot script
 mkdir -p ~/.termux/boot
-
-# 2) write your startup script
-cat > ~/.termux/boot/start.sh <<'EOF'
+cat > ~/.termux/boot/start_naistro.sh << 'EOF'
 #!/bin/bash
-
-# Give Android time to finish booting
-sleep 5
-
-# Keep the device awake while we start up
+am start -n com.termux/com.termux.app.TermuxActivity
 termux-wake-lock
-
-# Define your workdir and command
-APP_DIR="~/naistro-player-box-dist"
-CMD="cd \"$APP_DIR\" && python3 dist/naistro-player-box.pyz"
-
-# Launch Termux UI and tell it to run your CMD, then exit the session when done
-am start -n com.termux/com.termux.app.TermuxActivity \
-   -e com.termux.RUN_COMMAND "$CMD" \
-   --ez com.termux.RUN_COMMAND_EXIT true
+sleep 5
+cd ~/naistro-player-box-dist
+clear
+python3 dist/naistro-player-box.pyz
 EOF
 
-# 3) make it executable
-chmod +x ~/.termux/boot/start.sh
+# Set permissions
+chmod +x ~/.termux/boot/start_naistro.sh
+termux-setup-storage
 
-echo "✅ Termux:Boot start.sh installed. It will run once on next boot."
+echo "Setup complete! Reboot to test."
