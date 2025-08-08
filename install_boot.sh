@@ -19,4 +19,8 @@ clear
 python3 dist/naistro-player-box.pyz
 EOF
 
+
+# Set permissions
+chmod +x ~/.bashrc
+
 echo "Setup complete! Reboot to test."
