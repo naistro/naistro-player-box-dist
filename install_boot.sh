@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# Install dependencies
-pkg update -y && pkg install -y python mpv termux-boot termux-api
-
 # Create boot script
 mkdir -p ~/.termux/boot
 cat > ~/.termux/boot/start_naistro.sh << 'EOF'
@@ -17,6 +14,5 @@ EOF
 
 # Set permissions
 chmod +x ~/.termux/boot/start_naistro.sh
-termux-setup-storage
 
 echo "Setup complete! Reboot to test."
