@@ -6,3 +6,4 @@ pyyaml
 python-mpv
 websocket-client
 schedule
+PyJWT
