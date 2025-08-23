@@ -13,7 +13,7 @@ chmod +x ~/.termux/boot/start_naistro.sh
 
 cat > ~/.bashrc << 'EOF'
 #!/bin/bash
-sleep 2
+sleep 5
 cd ~/naistro-player-box-dist
 clear
 python3 dist/naistro-player-box.pyz
