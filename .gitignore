@@ -21,3 +21,4 @@ cache/
 client_id_cache.txt
 
 config/token.txt
+config/token.json
