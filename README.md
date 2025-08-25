@@ -9,7 +9,7 @@ pkg upgrade
 pkg install python git mpv
 git clone https://github.com/naistro/naistro-player-box-dist
 cd naistro-player-box-dist
-chmod +x ./setup.sh
-setup.sh
-chmod +x ./install_boot.sh
-install_boot.sh
+chmod +x setup.sh
+./setup.sh
+chmod +x install_boot.sh
+./install_boot.sh
