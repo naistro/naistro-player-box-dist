@@ -13,3 +13,5 @@ chmod +x setup.sh
 ./setup.sh
 chmod +x install_boot.sh
 ./install_boot.sh
+
+ensure to set the time of the device to match the location
