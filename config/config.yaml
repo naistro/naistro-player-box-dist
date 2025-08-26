@@ -1,23 +1,23 @@
 # config/config.yaml
 # development
-# api:
-#   locations_url: "https://api-dev.naistro.com/players/locations"
-#   normalized_cdn: "https://cdn-gate-dev.naistro.com/audio/normalized"
-#   published_cdn: "https://cdn-gate-dev.naistro.com/audio/published"
-#   sqs_url: "https://sqs.eu-west-1.amazonaws.com/528527461191/player-box-message-dev"
-#   websocket_url: "wss://websocketv2-dev.naistro.com"
-# headers:
-#   public_api_key: "o4PBtizoSs1meRjfgXohv9H0nMowRuTA4CNraECW"
-#   content_type: "application/json"
+api:
+  locations_url: "https://api-dev.naistro.com/players/locations"
+  normalized_cdn: "https://cdn-gate-dev.naistro.com/audio/normalized"
+  published_cdn: "https://cdn-gate-dev.naistro.com/audio/published"
+  sqs_url: "https://sqs.eu-west-1.amazonaws.com/528527461191/player-box-message-dev"
+  websocket_url: "wss://websocketv2-dev.naistro.com"
+headers:
+  public_api_key: "o4PBtizoSs1meRjfgXohv9H0nMowRuTA4CNraECW"
+  content_type: "application/json"
 
 
 # production
-api:
-  locations_url: "https://api-prod.naistro.com/players/locations"
-  normalized_cdn: "https://cdn-gate-production.naistro.com/audio/normalized"
-  published_cdn: "https://cdn-gate-production.naistro.com/audio/published"
-  sqs_url: "https://sqs.eu-west-1.amazonaws.com/528527461191/player-box-message-dev"
-  websocket_url: "wss://websocketv2-prod.naistro.com"
-headers:
-  public_api_key: "a2CV9oQ0oND3unseTyFB2daK2iEHeUX4bpojrXP5"
-  content_type: "application/json"
+# api:
+#   locations_url: "https://api-prod.naistro.com/players/locations"
+#   normalized_cdn: "https://cdn-gate-production.naistro.com/audio/normalized"
+#   published_cdn: "https://cdn-gate-production.naistro.com/audio/published"
+#   sqs_url: "https://sqs.eu-west-1.amazonaws.com/528527461191/player-box-message-dev"
+#   websocket_url: "wss://websocketv2-prod.naistro.com"
+# headers:
+#   public_api_key: "a2CV9oQ0oND3unseTyFB2daK2iEHeUX4bpojrXP5"
+#   content_type: "application/json"
