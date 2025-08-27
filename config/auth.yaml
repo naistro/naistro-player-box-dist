@@ -1,27 +1,27 @@
 # config/auth.yaml
 
 # development
-aws_cognito:
-  user_pool_id: "eu-west-1_O9xcPaG24"
-  client_id: "4ffgfe9g364gep939ip6bj72u5"
-  region: "eu-west-1"
-  auth_url: "https://cognito-idp.eu-west-1.amazonaws.com/"
-credentials:
-  username: "naistro"
-  password: "test123ABC!"
-headers:
-  content_type: "application/x-amz-json-1.1"
-
-
-# production
 # aws_cognito:
-#   user_pool_id: "eu-west-1_G5rHcoeuQ"
-#   client_id: "3i2edjm6kujd0qt27t41dfefs9"
+#   user_pool_id: "eu-west-1_O9xcPaG24"
+#   client_id: "4ffgfe9g364gep939ip6bj72u5"
 #   region: "eu-west-1"
 #   auth_url: "https://cognito-idp.eu-west-1.amazonaws.com/"
 # credentials:
-#   # must use username not email
 #   username: "naistro"
 #   password: "test123ABC!"
 # headers:
 #   content_type: "application/x-amz-json-1.1"
+
+
+# production
+aws_cognito:
+  user_pool_id: "eu-west-1_G5rHcoeuQ"
+  client_id: "3i2edjm6kujd0qt27t41dfefs9"
+  region: "eu-west-1"
+  auth_url: "https://cognito-idp.eu-west-1.amazonaws.com/"
+credentials:
+  # must use username not email
+  username: "naistro"
+  password: "test123ABC!"
+headers:
+  content_type: "application/x-amz-json-1.1"
