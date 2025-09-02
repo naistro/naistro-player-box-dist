@@ -13,7 +13,6 @@
 #   content_type: "application/x-amz-json-1.1"
 
 
-# production
 aws_cognito:
   user_pool_id: "eu-west-1_G5rHcoeuQ"
   client_id: "3i2edjm6kujd0qt27t41dfefs9"

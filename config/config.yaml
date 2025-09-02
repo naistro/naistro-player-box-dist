@@ -11,7 +11,6 @@
 #   content_type: "application/json"
 
 
-# production
 api:
   locations_url: "https://api-prod.naistro.com/players/locations"
   normalized_cdn: "https://cdn-gate-production.naistro.com/audio/normalized"
