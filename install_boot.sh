@@ -16,7 +16,7 @@ cat > ~/.bashrc << 'EOF'
 sleep 30
 cd ~/naistro-player-box-dist
 clear
-python3 dist/naistro-player-box.pyz
+python dist/naistro-player-box.pyz
 EOF
 
 
