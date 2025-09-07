@@ -25,7 +25,8 @@ Download and install all necessary APKs from:
 
 1. Install **Termux**  
 2. Install **Termux:Boot**  
-3. Install and grant permissions to **AirDroid Business**  
+3. Install and grant permissions to **AirDroid Business** 
+4. Grant permissions to **Termux** and **Termux:Boot** as well from the android settings page
 
 ---
 
@@ -82,3 +83,7 @@ nano config/auth.yaml
 
 Ensure your device's time is correctly set to match your physical location.  
 Incorrect time settings may cause issues with the application functionality.
+
+
+## Restart Device
+Restart the device and it should boot and automatically run the the naistro application after about 10-20 seconds
