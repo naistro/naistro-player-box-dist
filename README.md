@@ -22,16 +22,19 @@ Download and install all necessary APKs from:
 [http://bit.ly/4mPKV2t](http://bit.ly/4mPKV2t)  
 
 *(This includes Termux and other dependencies)*
-1. Install termux
-2. Install termux_boot
-3. Install and grant permissions to airdroid business
+
+1. Install **Termux**  
+2. Install **Termux:Boot**  
+3. Install and grant permissions to **AirDroid Business**  
 
 ---
 
 ## Installation Instructions
 
-1. Open **Termux** application.
-2. Run the following commands in sequence: (when prompted choose the default)
+1. To remote access the Android box and configure it from your PC, you need **AirDroid Business** installed and permissions granted.  
+2. Launch **Remote Control** from AirDroid Business on the respective device.  
+3. Open **Termux** application.  
+4. Run the following commands in sequence (when prompted choose the default):  
 
 ```bash
 # Update and upgrade packages
@@ -55,6 +58,21 @@ chmod +x setup.sh
 chmod +x install_boot.sh
 ./install_boot.sh
 ```
+
+---
+
+## Client Authorization Setup
+
+*(Update the shared template with the `auth.yaml` to have the username and password for the client)*  
+
+1. While still in Termux, run this command:  
+```bash
+nano config/auth.yaml
+```  
+
+2. Paste the content with the appropriate client credential updated.  
+3. Hit `CTRL + X`, then `Y`, and then `Enter` to save.  
+4. Repeat the above for `config.yaml`, but for `config.yaml` you don't need to update anything on the template.  
 
 ---
 
