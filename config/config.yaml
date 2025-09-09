@@ -1,1 +1,11 @@
 # config/config.yaml
+
+api:
+  locations_url: "https://api-prod.naistro.com/players/locations"
+  normalized_cdn: "https://cdn-gate-production.naistro.com/audio/normalized"
+  published_cdn: "https://cdn-gate-production.naistro.com/audio/published"
+  sqs_url: "https://sqs.eu-west-1.amazonaws.com/528527461191/player-box-message-dev"
+  websocket_url: "wss://websocketv2-prod.naistro.com"
+headers:
+  public_api_key: "a2CV9oQ0oND3unseTyFB2daK2iEHeUX4bpojr"
+  content_type: "application/json"
