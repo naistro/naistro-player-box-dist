@@ -9,5 +9,7 @@ credentials:
   # must use username not email
   username: ""
   password: ""
+  # device id must be a unique string to identify the device
+  device_id: ""
 headers:
   content_type: "application/x-amz-json-1.1"
