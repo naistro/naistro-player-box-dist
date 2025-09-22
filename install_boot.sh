@@ -5,8 +5,8 @@ mkdir -p ~/.termux/boot
 cat > ~/.termux/boot/start_naistro.sh << 'EOF'
 #!/bin/bash
 
-# Wait for internet connection (max 60 seconds)
-timeout=60
+# Wait for internet connection (max 180 seconds)
+timeout=300
 while [ $timeout -gt 0 ]; do
     if ping -c 1 -W 1 8.8.8.8 >/dev/null 2>&1; then
         break
