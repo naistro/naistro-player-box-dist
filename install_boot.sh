@@ -15,6 +15,7 @@ while [ $timeout -gt 0 ]; do
     timeout=$((timeout - 1))
 done
 
+sleep 20
 am start -n com.termux/com.termux.app.TermuxActivity
 termux-wake-lock
 EOF
@@ -35,6 +36,7 @@ while [ $timeout -gt 0 ]; do
     timeout=$((timeout - 1))
 done
 
+sleep 10
 cd ~/naistro-player-box-dist
 clear
 python dist/naistro-player-box.pyz
