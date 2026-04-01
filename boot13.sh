@@ -35,7 +35,7 @@ done
 sleep 10
 cd ~/naistro-player-box-dist
 clear
-python3.10 dist/naistro-player-box3.13.pyz
+python dist/naistro-player-box3.13.pyz
 EOF
 
 # Set permissions
